@@ -1,0 +1,5 @@
+{
+  "name": "Reference fonts",
+  "init": "./start.js",
+  "function": "start"
+}
