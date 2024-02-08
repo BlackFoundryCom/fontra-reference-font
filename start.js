@@ -21,8 +21,6 @@ import { Font } from "fontra/third-party/lib-font.js";
 
 import { registerVisualizationLayerDefinition } from "fontra/editor/visualization-layer-definitions.js";
 
-customElements.define("reference-font-ui-list", UIList);
-
 let referenceFontModel;
 
 const fontFileExtensions = new Set(["ttf", "otf", "woff", "woff2"]);
