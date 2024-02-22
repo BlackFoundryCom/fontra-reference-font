@@ -27,7 +27,7 @@ const fontFileExtensions = new Set(["ttf", "otf", "woff", "woff2"]);
 const DEFAULT_FONT_SIZE = 100;
 
 registerVisualizationLayerDefinition({
-  identifier: "fontra.reference.font",
+  identifier: "fontra.reference-font-plugin",
   name: "Reference font",
   selectionMode: "editing",
   userSwitchable: true,
@@ -602,7 +602,7 @@ export default class ReferenceFontPanel extends Panel {
       charOverride: "",
       referenceFontName: "",
     });
-    this.controller.synchronizeWithLocalStorage("fontra.reference-font.");
+    this.controller.synchronizeWithLocalStorage("fontra.reference-font-plugin.");
     this.controller.addKeyListener("fontList", (event) => {
       this._fontListChangedHandler(event);
       this.requestReferenceFontsPreview();
